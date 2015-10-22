@@ -718,7 +718,6 @@ var/list/ai_verbs_default = list(
 
 	verbs += new/datum/game_mode/malfunction/verb/ai_select_hardware()
 	verbs += new/datum/game_mode/malfunction/verb/ai_select_research()
-	verbs += new/datum/game_mode/malfunction/verb/ai_help()
 
 	// And greet user with some OOC info.
 	user << "You are malfunctioning, you do not have to follow any laws."

@@ -63,7 +63,6 @@
 
 
 	if(ticker && ticker.mode)
-		sql_report_death(src)
 		ticker.mode.check_win()
 
 	return ..(gibbed,species.death_message)
