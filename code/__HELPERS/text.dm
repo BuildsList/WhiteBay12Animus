@@ -32,11 +32,16 @@
 
 proc/sanitize_russian(var/msg, var/html = 0)
 	var/rep
+	var/index
 	if(html)
 		rep = "&#x44F;"
+		index = findtext(msg, "&#255;")
+		while(index)
+			msg = copytext(msg, 1, index) + rep + copytext(msg, index + 6)
+			index = findtext(msg, "&#255;")
 	else
 		rep = "&#255;"
-	var/index = findtext(msg, "ÿ")
+	index = findtext(msg, "ÿ")
 	while(index)
 		msg = copytext(msg, 1, index) + rep + copytext(msg, index + 1)
 		index = findtext(msg, "ÿ")

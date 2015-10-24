@@ -84,7 +84,7 @@
 		user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[stars(info)][stamps]</BODY></HTML>", "window=[name]")
 		onclose(user, "[name]")
 	else
-		user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info][stamps]</BODY></HTML>", "window=[name]")
+		user << browse(sanitize_russian("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info][stamps]</BODY></HTML>", 1), "window=[name]")
 		onclose(user, "[name]")
 
 /obj/item/weapon/paper/verb/rename()
@@ -123,7 +123,7 @@
 	else //cyborg or AI not seeing through a camera
 		dist = get_dist(src, user)
 	if(dist < 2)
-		usr << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info][stamps]</BODY></HTML>", "window=[name]")
+		usr << browse(sanitize_russian("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info][stamps]</BODY></HTML>", 1), "window=[name]")
 		onclose(usr, "[name]")
 	else
 		usr << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[stars(info)][stamps]</BODY></HTML>", "window=[name]")
@@ -367,7 +367,7 @@
 
 		update_space(t)
 
-		usr << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info_links][stamps]</BODY></HTML>", "window=[name]") // Update the window
+		usr << browse(sanitize_russian("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info_links][stamps]</BODY></HTML>", 1), "window=[name]") // Update the window
 
 		update_icon()
 
@@ -436,7 +436,7 @@
 		if ( istype(RP) && RP.mode == 2 )
 			RP.RenamePaper(user,src)
 		else
-			user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info_links][stamps]</BODY></HTML>", "window=[name]")
+			user << browse(sanitize_russian("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY>[info_links][stamps]</BODY></HTML>", 1), "window=[name]")
 		return
 
 	else if(istype(P, /obj/item/weapon/stamp))

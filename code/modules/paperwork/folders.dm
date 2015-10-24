@@ -74,7 +74,7 @@
 					usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[stars(P.info)][P.stamps]</BODY></HTML>", "window=[P.name]")
 					onclose(usr, "[P.name]")
 				else
-					usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.info][P.stamps]</BODY></HTML>", "window=[P.name]")
+					usr << browse(sanitize_russian("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.info][P.stamps]</BODY></HTML>", 1), "window=[P.name]")
 					onclose(usr, "[P.name]")
 		else if(href_list["look"])
 			var/obj/item/weapon/photo/P = locate(href_list["look"])
@@ -87,20 +87,20 @@
 				onclose(usr, "[P.name]")
 		else if(href_list["rename"])
 			var/obj/item/weapon/O = locate(href_list["rename"])
-			
+
 			if(O && (O.loc == src))
 				if(istype(O, /obj/item/weapon/paper))
 					var/obj/item/weapon/paper/to_rename = O
 					to_rename.rename()
-					
+
 				else if(istype(O, /obj/item/weapon/photo))
 					var/obj/item/weapon/photo/to_rename = O
 					to_rename.rename()
-					
+
 				else if(istype(O, /obj/item/weapon/paper_bundle))
 					var/obj/item/weapon/paper_bundle/to_rename = O
 					to_rename.rename()
-					
+
 		//Update everything
 		attack_self(usr)
 		update_icon()

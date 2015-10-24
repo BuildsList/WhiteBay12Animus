@@ -64,6 +64,7 @@
 	if(!check_rights(R_SERVER|R_DEBUG,0))
 		msg = sanitize(msg)
 		if(!msg)	return
+	msg = sanitize_russian(msg)
 
 	var/recieve_pm_type = "Player"
 	if(holder)

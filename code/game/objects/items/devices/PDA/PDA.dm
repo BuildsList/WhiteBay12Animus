@@ -287,7 +287,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		else
 			HTML += addtext("<i><b>&larr; From <a href='byond://?src=\ref[src];choice=Message;notap=1;target=",index["target"],"'>", index["owner"],"</a>:</b></i><br>", index["message"], "<br>")
 	HTML +="</body></html>"
-	usr << browse(HTML, "window=log;size=400x444;border=1;can_resize=1;can_close=1;can_minimize=0")
+	usr << browse(sanitize_russian(HTML, 1), "window=log;size=400x444;border=1;can_resize=1;can_close=1;can_minimize=0")
 
 
 /obj/item/device/pda/ai/can_use()
@@ -361,17 +361,17 @@ var/global/list/obj/item/device/pda/PDAs = list()
 
 	var/data[0]  // This is the data that will be sent to the PDA
 
-	data["owner"] = owner					// Who is your daddy...
-	data["ownjob"] = ownjob					// ...and what does he do?
+	data["owner"] = owner								// Who is your daddy...
+	data["ownjob"] = ownjob								// ...and what does he do?
 
-	data["mode"] = mode					// The current view
-	data["scanmode"] = scanmode				// Scanners
-	data["fon"] = fon					// Flashlight on?
-	data["pai"] = (isnull(pai) ? 0 : 1)			// pAI inserted?
-	data["note"] = note					// current pda notes
-	data["message_silent"] = message_silent					// does the pda make noise when it receives a message?
+	data["mode"] = mode									// The current view
+	data["scanmode"] = scanmode							// Scanners
+	data["fon"] = fon									// Flashlight on?
+	data["pai"] = (isnull(pai) ? 0 : 1)					// pAI inserted?
+	data["note"] = sanitize_russian(note, 1)			// current pda notes
+	data["message_silent"] = message_silent				// does the pda make noise when it receives a message?
 	data["news_silent"] = news_silent					// does the pda make noise when it receives news?
-	data["toff"] = toff					// is the messenger function turned off?
+	data["toff"] = toff									// is the messenger function turned off?
 	data["active_conversation"] = active_conversation	// Which conversation are we following right now?
 
 
@@ -981,8 +981,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			U << "ERROR: Messaging server rejected your message. Reason: contains '[send_result]'."
 			return
 
-		tnote.Add(list(list("sent" = 1, "owner" = "[P.owner]", "job" = "[P.ownjob]", "message" = "[t]", "target" = "\ref[P]")))
-		P.tnote.Add(list(list("sent" = 0, "owner" = "[owner]", "job" = "[ownjob]", "message" = "[t]", "target" = "\ref[src]")))
+		tnote.Add(list(list("sent" = 1, "owner" = "[P.owner]", "job" = "[P.ownjob]", "message" = "[sanitize_russian(t, 1)]", "target" = "\ref[P]")))
+		P.tnote.Add(list(list("sent" = 0, "owner" = "[owner]", "job" = "[ownjob]", "message" = "[sanitize_russian(t, 1)]", "target" = "\ref[src]")))
 		for(var/mob/M in player_list)
 			if(M.stat == DEAD && M.client && (M.client.prefs.toggles & CHAT_GHOSTEARS)) // src.client is so that ghosts don't have to listen to mice
 				if(istype(M, /mob/new_player))
