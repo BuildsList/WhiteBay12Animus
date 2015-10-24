@@ -1,1 +1,1 @@
-git clone --depth 1 https://bitbucket.org/PlinHost/plinstation12.git
+git clone --depth 1 https://bitbucket.org/animusstations/whitebay12.git
