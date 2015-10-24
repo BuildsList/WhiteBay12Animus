@@ -49,6 +49,8 @@
 	if(!wall_cache["[new_state]-[material.icon_colour]"])
 		var/image/I = image(icon='icons/turf/wall_masks.dmi',icon_state="[new_state]")
 		I.color = material.icon_colour
+		if(istype(material, /material/plasteel))	//FUCK YOU
+			I.color = "#666666"
 		wall_cache["[new_state]-[material.icon_colour]"] = I
 	overlays |= wall_cache["[new_state]-[material.icon_colour]"]
 	if(reinf_material)

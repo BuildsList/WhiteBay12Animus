@@ -305,6 +305,8 @@
 			for(var/n in connections)
 				var/image/I = image(icon, "[material.icon_base]_[n]")
 				I.color = material.icon_colour
+				if(istype(material, /material/steel))	//FUCK YOU
+					I.color = "#CCCCCC"
 				I.alpha = 255 * material.opacity
 				overlays += I
 
@@ -340,6 +342,8 @@
 		if(material)
 			var/image/I = image(icon, "[material.icon_base]_flip[type]")
 			I.color = material.icon_colour
+			if(istype(material, /material/steel))	//FUCK YOU
+				I.color = "#CCCCCC"
 			I.alpha = 255 * material.opacity
 			overlays += I
 			name = "[material.display_name] table"

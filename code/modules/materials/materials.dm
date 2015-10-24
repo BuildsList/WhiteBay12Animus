@@ -483,7 +483,7 @@ var/list/name_to_material
 	flags = MATERIAL_BRITTLE
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
-	icon_colour = "#CCCCCC"
+	icon_colour = "#DDDDDD"
 	hardness = 10
 	weight = 12
 	melting_point = T0C+371 //assuming heat resistant plastic

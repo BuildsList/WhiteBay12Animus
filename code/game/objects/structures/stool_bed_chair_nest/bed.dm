@@ -47,6 +47,8 @@
 	if(isnull(stool_cache[cache_key]))
 		var/image/I = image('icons/obj/furniture.dmi', base_icon)
 		I.color = material.icon_colour
+		if(istype(material, /material/steel))	//FUCK YOU
+			I.color = "#999999"
 		stool_cache[cache_key] = I
 	overlays |= stool_cache[cache_key]
 	// Padding overlay.
