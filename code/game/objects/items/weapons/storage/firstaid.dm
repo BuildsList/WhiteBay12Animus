@@ -303,3 +303,18 @@
 		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
 		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
 		new /obj/item/weapon/reagent_containers/pill/citalopram( src )
+
+
+/obj/item/weapon/storage/pill_bottle/alkysine
+	name = "bottle of Alkysine pills"
+	desc = "Contains pills used to treat brain dmage."
+
+	New()
+		..()
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )
+		new /obj/item/weapon/reagent_containers/pill/alkysine( src )

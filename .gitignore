@@ -9,3 +9,5 @@ Thumbs.db
 data/
 cfg/
 
+config/admins.txt
+maps/backup

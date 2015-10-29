@@ -261,3 +261,11 @@
 	New()
 		..()
 		reagents.add_reagent("spaceacillin", 15)
+
+/obj/item/weapon/reagent_containers/pill/alkysine
+	name = "Alkysine pill"
+	desc = "Used to treat brain damage."
+	icon_state = "pill18"
+	New()
+		..()
+		reagents.add_reagent("alkysine", 20)
