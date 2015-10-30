@@ -8,6 +8,7 @@ Thumbs.db
 *.backup
 data/
 cfg/
-
+mapmerge
 config/admins.txt
 maps/backup
+maps/exodus-1-EXPERIMENTAL.dmm
