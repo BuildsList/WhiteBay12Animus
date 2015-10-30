@@ -32,17 +32,17 @@ var/global/datum/controller/gameticker/ticker
 	var/triai = 0//Global holder for Triumvirate
 
 	var/round_end_announced = 0 // Spam Prevention. Announce round end only once.
+	var/list/lobby_music = list('sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
+								'sound/music/halloween/Danny Elfman - This is Helloween.ogg' = "Danny Elfman - This is Helloween",\
+								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\
+								/*'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
+								'sound/music/traitor.ogg' = "traitor.ogg",\
+								'sound/music/title2.ogg' = "level3.mod",\
+								'sound/music/clouds.s3m' = "hec/DMk - Clouds Of Fire",\
+								'sound/music/space_oddity.ogg' = "Chris Hadfield - Space Oddity*/)//Ground Control to Major Tom, this song is cool, what's going on?
 
 /datum/controller/gameticker/proc/pregame()
-	login_music = pick(\
-	/*'sound/music/halloween/skeletons.ogg',\
-	'sound/music/halloween/halloween.ogg',\
-	'sound/music/halloween/ghosts.ogg'*/
-	'sound/music/space.ogg',\
-	'sound/music/traitor.ogg',\
-	'sound/music/title2.ogg',\
-	'sound/music/clouds.s3m',\
-	'sound/music/space_oddity.ogg') //Ground Control to Major Tom, this song is cool, what's going on?
+	login_music = pick(lobby_music)
 	do
 		pregame_timeleft = 180
 		world << "<B><FONT color='blue'>Welcome to the pre-game lobby!</FONT></B>"
