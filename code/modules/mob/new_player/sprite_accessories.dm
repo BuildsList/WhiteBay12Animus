@@ -181,11 +181,13 @@
 		icon_state = "hair_bowlcut"
 		gender = MALE
 
-	buzz
-		name = "Buzzcut"
-		icon_state = "hair_buzzcut"
-		gender = MALE
-		species_allowed = list("Human","Unathi")
+	halfbang
+		name = "Half-banged Hair"
+		icon_state = "hair_halfbang"
+
+	Braided
+		name = "Braided front"
+		icon_state = "hair_braidfront"
 
 	crew
 		name = "Crewcut"
