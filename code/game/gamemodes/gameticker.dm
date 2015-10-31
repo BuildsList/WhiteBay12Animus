@@ -11,6 +11,7 @@ var/global/datum/controller/gameticker/ticker
 	var/event = 0
 
 	var/login_music			// music played in pregame lobby
+	var/closing_music		// music for closing credits
 
 	var/list/datum/mind/minds = list()//The people in the game. Used for objective tracking.
 
@@ -316,6 +317,8 @@ var/global/datum/controller/gameticker/ticker
 				declare_completion()
 
 			spawn(50)
+				world << sound(ticker.closing_music, repeat = 0, wait = 0, volume = 85, channel = 1)
+				showcredits()
 				callHook("roundend")
 
 				if (mode.station_was_nuked)
