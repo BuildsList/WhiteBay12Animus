@@ -36,7 +36,7 @@ var/global/datum/controller/gameticker/ticker
 	var/list/lobby_music = list('sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
 								'sound/music/halloween/Danny Elfman - This is Helloween.ogg' = "Danny Elfman - This is Helloween",\
 								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\
-								/*'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
+								'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
 								'sound/music/traitor.ogg' = "traitor.ogg",\
 								'sound/music/title2.ogg' = "level3.mod",\
 								'sound/music/space_oddity.ogg' = "Chris Hadfield - Space Oddity",\
@@ -51,12 +51,12 @@ var/global/datum/controller/gameticker/ticker
 								'sound/music/Syrsa - Yonk.ogg' = "Syrsa - Yonk",\
 								'sound/music/The_Clouds_Will_Clear_-_The_Storm_Will_Pass.ogg' = "The Clouds Will Clear - The Storm Will Pass",\
 								'sound/music/Variations on a Space Station.ogg' = "Variations on a Space Station",\
-								'sound/music/Waterflame - Waiting Room.ogg' = "Waterflame - Waiting Room"*/ )
+								'sound/music/Waterflame - Waiting Room.ogg' = "Waterflame - Waiting Room" )
 
 	var/list/ending_music = list('sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
 								'sound/music/halloween/Danny Elfman - This is Helloween.ogg' = "Danny Elfman - This is Helloween",\
 								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\
-								/*'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
+								'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
 								'sound/music/traitor.ogg' = "traitor.ogg",\
 								'sound/music/title2.ogg' = "level3.mod",\
 								'sound/music/space_oddity.ogg' = "Chris Hadfield - Space Oddity",\
@@ -72,7 +72,7 @@ var/global/datum/controller/gameticker/ticker
 								'sound/music/Syrsa - Yonk.ogg' = "Syrsa - Yonk",\
 								'sound/music/The_Clouds_Will_Clear_-_The_Storm_Will_Pass.ogg' = "The Clouds Will Clear - The Storm Will Pass",\
 								'sound/music/Variations on a Space Station.ogg' = "Variations on a Space Station",\
-								'sound/music/Waterflame - Waiting Room.ogg' = "Waterflame - Waiting Room"*/)
+								'sound/music/Waterflame - Waiting Room.ogg' = "Waterflame - Waiting Room")
 
 
 /datum/controller/gameticker/proc/pregame()
