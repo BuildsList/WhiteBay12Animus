@@ -49,7 +49,7 @@ datum/controller/vote
 				voting.Cut()
 
 	proc/autotransfer()
-		initiate_vote("crew_transfer","the server", 1)
+		initiate_vote("crew transfer","the server", 1)
 		log_debug("The server has called a crew transfer vote")
 
 	proc/reset()
@@ -85,7 +85,7 @@ datum/controller/vote
 						choices[master_mode] += non_voters
 						if(choices[master_mode] >= greatest_votes)
 							greatest_votes = choices[master_mode]
-				else if(mode == "crew_transfer")
+				else if(mode == "crew transfer")
 					var/factor = 0.5
 					switch(world.time / (10 * 60)) // minutes
 						if(0 to 60)
@@ -156,7 +156,7 @@ datum/controller/vote
 							restart = 1
 						else
 							master_mode = .
-				if("crew_transfer")
+				if("crew transfer")
 					if(. == "Initiate Crew Transfer")
 						init_shift_change(null, 1)
 				if("add_antagonist")
@@ -215,7 +215,7 @@ datum/controller/vote
 						gamemode_names[M.config_tag] = capitalize(M.name) //It's ugly to put this here but it works
 						additional_text.Add("<td align = 'center'>[M.required_players]</td>")
 					gamemode_names["secret"] = "Secret"
-				if("crew_transfer")
+				if("crew transfer")
 					if(check_rights(R_ADMIN|R_MOD, 0))
 						question = "End the shift?"
 						choices.Add("Initiate Crew Transfer", "Continue The Round")
@@ -255,7 +255,7 @@ datum/controller/vote
 			log_vote(text)
 			world << "<font color='purple'><b>[text]</b>\nType <b>vote</b> or click <a href='?src=\ref[src]'>here</a> to place your votes.\nYou have [config.vote_period/10] seconds to vote.</font>"
 			switch(vote_type)
-				if("crew_transfer")
+				if("crew transfer")
 					world << sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
 				if("gamemode")
 					world << sound('sound/ambience/alarm4.ogg', repeat = 0, wait = 0, volume = 50, channel = 3)
@@ -317,7 +317,7 @@ datum/controller/vote
 				. += "<font color='grey'>Restart (Disallowed)</font>"
 			. += "</li><li>"
 			if(trialmin || config.allow_vote_restart)
-				. += "<a href='?src=\ref[src];vote=crew_transfer'>Crew Transfer</a>"
+				. += "<a href='?src=\ref[src];vote=crew transfer'>Crew Transfer</a>"
 			else
 				. += "<font color='grey'>Crew Transfer (Disallowed)</font>"
 			if(trialmin)
@@ -367,9 +367,9 @@ datum/controller/vote
 			if("gamemode")
 				if(config.allow_vote_mode || usr.client.holder)
 					initiate_vote("gamemode",usr.key)
-			if("crew_transfer")
+			if("crew transfer")
 				if(config.allow_vote_restart || usr.client.holder)
-					initiate_vote("crew_transfer",usr.key)
+					initiate_vote("crew transfer",usr.key)
 			if("add_antagonist")
 				if(config.allow_extra_antags)
 					initiate_vote("add_antagonist",usr.key)
