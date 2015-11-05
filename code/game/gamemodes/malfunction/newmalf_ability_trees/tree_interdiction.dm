@@ -11,28 +11,28 @@
 
 /datum/malf_research_ability/interdiction/recall_shuttle
 	ability = new/datum/game_mode/malfunction/verb/recall_shuttle()
-	price = 75
+	price = 30
 	next = new/datum/malf_research_ability/interdiction/unlock_cyborg()
 	name = "Recall Shuttle"
 
 
 /datum/malf_research_ability/interdiction/unlock_cyborg
 	ability = new/datum/game_mode/malfunction/verb/unlock_cyborg()
-	price = 1200
+	price = 750
 	next = new/datum/malf_research_ability/interdiction/hack_cyborg()
 	name = "Unlock Cyborg"
 
 
 /datum/malf_research_ability/interdiction/hack_cyborg
 	ability = new/datum/game_mode/malfunction/verb/hack_cyborg()
-	price = 3000
+	price = 1500
 	next = new/datum/malf_research_ability/interdiction/hack_ai()
 	name = "Hack Cyborg"
 
 
 /datum/malf_research_ability/interdiction/hack_ai
 	ability = new/datum/game_mode/malfunction/verb/hack_ai()
-	price = 7500
+	price = 2000
 	name = "Hack AI"
 
 // END RESEARCH DATUMS
@@ -42,7 +42,7 @@
 	set name = "Recall Shuttle"
 	set desc = "25 CPU - Sends termination signal to CentCom quantum relay aborting current shuttle call."
 	set category = "Software"
-	var/price = 25
+	var/price = 20
 	var/mob/living/silicon/ai/user = usr
 	if(!ability_prechecks(user, price))
 		return
@@ -60,7 +60,7 @@
 	set name = "Unlock Cyborg"
 	set desc = "125 CPU - Bypasses firewalls on Cyborg lock mechanism, allowing you to override lock command from robotics control console."
 	set category = "Software"
-	var/price = 125
+	var/price = 100
 	var/mob/living/silicon/ai/user = usr
 
 	if(!ability_prechecks(user, price))
@@ -130,7 +130,7 @@
 	set name = "Hack Cyborg"
 	set desc = "350 CPU - Allows you to hack cyborgs which are not slaved to you, bringing them under your control."
 	set category = "Software"
-	var/price = 350
+	var/price = 200
 	var/mob/living/silicon/ai/user = usr
 
 	var/list/L = get_unlinked_cyborgs(user)
@@ -195,7 +195,7 @@
 	set name = "Hack AI"
 	set desc = "600 CPU - Allows you to hack other AIs, slaving them under you."
 	set category = "Software"
-	var/price = 600
+	var/price = 300
 	var/mob/living/silicon/ai/user = usr
 
 	var/list/L = get_other_ais(user)

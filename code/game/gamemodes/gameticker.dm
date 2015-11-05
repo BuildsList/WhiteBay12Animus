@@ -33,9 +33,9 @@ var/global/datum/controller/gameticker/ticker
 	var/triai = 0//Global holder for Triumvirate
 
 	var/round_end_announced = 0 // Spam Prevention. Announce round end only once.
-	var/list/lobby_music = list('sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
+	var/list/lobby_music = list(/*'sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
 								'sound/music/halloween/Danny Elfman - This is Helloween.ogg' = "Danny Elfman - This is Helloween",\
-								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\
+								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\*/
 								'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
 								'sound/music/traitor.ogg' = "traitor.ogg",\
 								'sound/music/title2.ogg' = "level3.mod",\
@@ -53,13 +53,12 @@ var/global/datum/controller/gameticker/ticker
 								'sound/music/Variations on a Space Station.ogg' = "Variations on a Space Station",\
 								'sound/music/Waterflame - Waiting Room.ogg' = "Waterflame - Waiting Room" )
 
-	var/list/ending_music = list('sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
+	var/list/ending_music = list(/*'sound/music/halloween/Andrew Gold - Spooky Scary Skeletons.ogg' = "Andrew Gold - Spooky Scary Skeletons",\
 								'sound/music/halloween/Danny Elfman - This is Helloween.ogg' = "Danny Elfman - This is Helloween",\
-								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\
+								'sound/music/halloween/Spirits Walk.ogg' = "SimCity Societies - Spirits Walk",\*/
 								'sound/music/space.ogg' = "Solus - Endless Space Expanded",\
 								'sound/music/traitor.ogg' = "traitor.ogg",\
 								'sound/music/title2.ogg' = "level3.mod",\
-								'sound/music/space_oddity.ogg' = "Chris Hadfield - Space Oddity",\
 								'sound/music/Alien Swarm - Syntek Residential.ogg' = "Alien Swarm - Syntek Residential",\
 								'sound/music/Chris Remo - Space Asshole.ogg' = "Chris Remo - Space Asshole",\
 								'sound/music/Civ3 - Stars Full.ogg' = "Civ3 - Stars Full",\

@@ -11,28 +11,28 @@
 
 /datum/malf_research_ability/manipulation/electrical_pulse
 	ability = new/datum/game_mode/malfunction/verb/electrical_pulse()
-	price = 50
+	price = 25
 	next = new/datum/malf_research_ability/manipulation/hack_camera()
 	name = "Electrical Pulse"
 
 
 /datum/malf_research_ability/manipulation/hack_camera
 	ability = new/datum/game_mode/malfunction/verb/hack_camera()
-	price = 1200
+	price = 750
 	next = new/datum/malf_research_ability/manipulation/emergency_forcefield()
 	name = "Hack Camera"
 
 
 /datum/malf_research_ability/manipulation/emergency_forcefield
 	ability = new/datum/game_mode/malfunction/verb/emergency_forcefield()
-	price = 3000
+	price = 1000
 	next = new/datum/malf_research_ability/manipulation/machine_overload()
 	name = "Emergency Forcefield"
 
 
 /datum/malf_research_ability/manipulation/machine_overload
 	ability = new/datum/game_mode/malfunction/verb/machine_overload()
-	price = 7500
+	price = 1500
 	name = "Machine Overload"
 
 // END RESEARCH DATUMS
@@ -42,7 +42,7 @@
 	set name = "Electrical Pulse"
 	set desc = "15 CPU - Sends feedback pulse through station's power grid, overloading some sensitive systems, such as lights."
 	set category = "Software"
-	var/price = 15
+	var/price = 10
 	var/mob/living/silicon/ai/user = usr
 	if(!ability_prechecks(user, price) || !ability_pay(user,price))
 		return
@@ -58,7 +58,7 @@
 	set name = "Hack Camera"
 	set desc = "100 CPU - Hacks existing camera, allowing you to add upgrade of your choice to it. Alternatively it lets you reactivate broken camera."
 	set category = "Software"
-	var/price = 100
+	var/price = 75
 	var/mob/living/silicon/ai/user = usr
 
 	if(target && !istype(target))
@@ -115,7 +115,7 @@
 	set name = "Emergency Forcefield"
 	set desc = "275 CPU - Uses station's emergency shielding system to create temporary barrier which lasts for few minutes, but won't resist gunfire."
 	set category = "Software"
-	var/price = 275
+	var/price = 150
 	var/mob/living/silicon/ai/user = usr
 	if(!T || !istype(T))
 		return
@@ -133,7 +133,7 @@
 	set name = "Machine Overload"
 	set desc = "400 CPU - Causes cyclic short-circuit in machine, resulting in weak explosion after some time."
 	set category = "Software"
-	var/price = 400
+	var/price = 250
 	var/mob/living/silicon/ai/user = usr
 
 	if(!ability_prechecks(user, price))
