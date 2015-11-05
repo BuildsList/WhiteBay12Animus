@@ -623,7 +623,7 @@
 "lY" = (/turf/unsimulated/wall{icon_state = "phoron1"},/area/alien)
 "lZ" = (/obj/item/weapon/paper{info = "Some stuff is missing..."; name = "Insert alien artifacts here."},/turf/unsimulated/floor{icon_state = "floor5"},/area/alien)
 "ma" = (/obj/machinery/door/airlock/hatch,/turf/unsimulated/floor{icon_state = "floor5"},/area/alien)
-"mb" = (/turf/unsimulated/wall/splashscreen{icon = 'icons/misc/fullscreen_halloween.dmi'},/area/start)
+"mb" = (/turf/unsimulated/wall/splashscreen{icon = 'icons/misc/fullscreen.dmi'},/area/start)
 "mc" = (/obj/structure/closet/acloset,/turf/unsimulated/floor{icon_state = "floor5"},/area/alien)
 "md" = (/turf/unsimulated/wall{icon_state = "phoron2"},/area/alien)
 "me" = (/obj/structure/lattice,/obj/structure/grille,/turf/space,/area/space)
