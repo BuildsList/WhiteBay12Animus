@@ -9,10 +9,10 @@ Ushanka:/obj/item/clothing/head/ushanka:200
 Personal Stuff
 Eye patch:/obj/item/clothing/glasses/eyepatch:130
 Cane:/obj/item/weapon/cane:130
-Zippo:/obj/item/weapon/lighter/zippo:130
+Zippo:/obj/item/weapon/flame/lighter/zippo:130
 Cigarette packet:/obj/item/weapon/storage/fancy/cigarettes:20
 DromedaryCo packet:/obj/item/weapon/storage/fancy/cigarettes/dromedaryco:50
-Premium Havanian Cigar:/obj/item/clothing/mask/cigarette/cigar/havana:130
+Premium Havanian Cigar:/obj/item/clothing/mask/smokable/cigarette/cigar/havana:130
 Beer bottle:/obj/item/weapon/reagent_containers/food/drinks/beer:80
 Captain flask:/obj/item/weapon/reagent_containers/food/drinks/flask:200
 Three Mile Island Ice Tea:/obj/item/weapon/reagent_containers/food/drinks/drinkingglass/threemileisland:100
@@ -22,6 +22,7 @@ Clown Shoes:/obj/item/clothing/shoes/clown_shoes:130
 Cyborg Shoes:/obj/item/clothing/shoes/cyborg:130
 Laceups Shoes:/obj/item/clothing/shoes/laceup:130
 Wooden Sandals:/obj/item/clothing/shoes/sandal:80
+Rainbow Shoes:/obj/item/clothing/shoes/rainbow:150
 
 Jumpsuits
 Vice Policeman:/obj/item/clothing/under/rank/vice:180
@@ -32,9 +33,9 @@ Schoolgirl Uniform:/obj/item/clothing/under/schoolgirl:130
 Tacticool Turtleneck:/obj/item/clothing/under/syndicate/tacticool:130
 
 Gloves
-White:/obj/item/clothing/gloves/color/white:130
-Rainbow:/obj/item/clothing/gloves/color/rainbow:200
-Black:/obj/item/clothing/gloves/color/black:160
+White:/obj/item/clothing/gloves//white:130
+Rainbow:/obj/item/clothing/gloves/rainbow:200
+Black:/obj/item/clothing/gloves//black:160
 
 Bedsheets
 Clown Bedsheet:/obj/item/weapon/bedsheet/clown:100
@@ -45,6 +46,9 @@ Captain Bedsheet:/obj/item/weapon/bedsheet/captain:120
 Toys
 Rubber Duck:/obj/item/weapon/bikehorn/rubberducky:200
 Champion Belt:/obj/item/weapon/storage/belt/champion:200
+Katana:/obj/item/toy/katana:350
+E-sword:/obj/item/toy/sword:400
+Revolver:/obj/item/toy/gun:200
 
 Special Stuff
 Santabag:/obj/item/weapon/storage/backpack/santabag:600

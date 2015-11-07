@@ -411,9 +411,9 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		src << "\blue Temperature: [round(environment.temperature-T0C,0.1)]&deg;C ([round(environment.temperature,0.1)]K)"
 		src << "\blue Heat Capacity: [round(environment.heat_capacity(),0.1)]"
 
-/mob/dead/observer/verb/become_mouse()
+/*/mob/dead/observer/verb/become_mouse()
 	set name = "Become mouse"
-	set category = "Ghost"
+	set category = "Ghost"*/
 
 	if(config.disable_player_mice)
 		src << "<span class='warning'>Spawning as a mouse is currently disabled.</span>"

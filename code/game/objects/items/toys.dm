@@ -378,8 +378,8 @@
 	item_state = "katana"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 5
-	throwforce = 5
+	force = 0
+	throwforce = 0
 	w_class = 3
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced")
 
