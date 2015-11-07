@@ -33,6 +33,15 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Part A", 'sound/misc/TestLoop1.ogg'),
 		new/datum/track("Scratch", 'sound/music/title1.ogg'),
 		new/datum/track("Trai`Tor", 'sound/music/traitor.ogg'),
+		new/datum/track("Jawa Bar", 'sound/music/jukebox/Cantina_Band_Jawa_Bar_Tatooine_Mos_Eisly.ogg'),
+		new/datum/track("Down With The Sickness", 'sound/music/jukebox/down_with_the_sickness.ogg'),
+		new/datum/track("In The Mood", 'sound/music/jukebox/GlennMiller-InTheMood.ogg'),
+		new/datum/track("Le Noir", 'sound/music/jukebox/L.A.NoireSoundtrack.ogg'),
+		new/datum/track("Onizuka's Blues", 'sound/music/jukebox/Onizukas_Blues.ogg'),
+		new/datum/track("Entertainer", 'sound/music/jukebox/Ragtime_Piano_The_Entertainer.ogg'),
+		new/datum/track("Night Shift", 'sound/music/jukebox/mus_industrialist_03.ogg'),
+		new/datum/track("Rain Must Fall", 'sound/music/jukebox/The Ink Spots and Ella Fitzgerald - Into Each Life Some Rain Must Fall.ogg'),
+		new/datum/track("Remove It", 'sound/music/jukebox/Serbian soldiers - REMOVE KEBAB.ogg'),
 	)
 
 
