@@ -2104,7 +2104,7 @@
 "aOx" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor{dir = 1; icon_state = "green"},/area/hydroponics)
 "aOy" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor{dir = 1; icon_state = "green"},/area/hydroponics)
 "aOz" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor{dir = 1; icon_state = "green"},/area/hydroponics)
-"aOA" = (/obj/item/device/radio/intercom{pixel_x = 25},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/camera/network/civilian_east{c_tag = "Hydroponics Pasture East"; dir = 8},/obj/item/weapon/stool/padded,/turf/simulated/floor{dir = 5; icon_state = "green"},/area/hydroponics)
+"aOA" = (/obj/effect/landmark/start{name = "Gardener"},/turf/simulated/floor{dir = 5; icon_state = "green"},/area/hydroponics)
 "aOB" = (/turf/simulated/floor/wood,/area/library)
 "aOC" = (/obj/machinery/hologram/holopad,/turf/simulated/floor/wood,/area/library)
 "aOD" = (/obj/structure/bed/chair/office/dark{dir = 1},/turf/simulated/floor/wood,/area/library)
