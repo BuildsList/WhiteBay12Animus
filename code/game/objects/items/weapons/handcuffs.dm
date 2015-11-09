@@ -110,6 +110,14 @@ var/last_chew = 0
 
 	last_chew = world.time
 
+/obj/item/weapon/handcuffs/pinkcuffs
+	name = "pink handcuffs"
+	desc = "They are so soft and adorable. Only best for Senpai~~."
+	icon_state = "pinkcuffs"
+	breakouttime = 300
+	cuff_sound = 'sound/weapons/cablecuff.ogg'
+	cuff_type = "cable restraints"
+
 /obj/item/weapon/handcuffs/cable
 	name = "cable restraints"
 	desc = "Looks like some cables tied together. Could be used to tie something up."
