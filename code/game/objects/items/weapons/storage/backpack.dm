@@ -63,7 +63,7 @@
 			user << "\red The Bluespace interfaces of the two devices conflict and malfunction."
 			qdel(W)
 			return
-			/* //BoH+BoH=Singularity, commented out.
+//BoH+BoH=Singularity, uncommented out. But we will not tell anyone, our precius-s-s-s~
 		if(istype(W, /obj/item/weapon/storage/backpack/holding) && !W.crit_fail)
 			investigate_log("has become a singularity. Caused by [user.key]","singulo")
 			user << "\red The Bluespace interfaces of the two devices catastrophically malfunction!"
@@ -74,9 +74,9 @@
 			log_game("[key_name(user)] detonated a bag of holding")
 			qdel(src)
 			return
-			*/
+
 		..()
-	
+
 	//Please don't clutter the parent storage item with stupid hacks.
 	can_be_inserted(obj/item/W as obj, stop_messages = 0)
 		if(istype(W, /obj/item/weapon/storage/backpack/holding))
