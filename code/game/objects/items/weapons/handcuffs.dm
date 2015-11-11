@@ -114,7 +114,7 @@ var/last_chew = 0
 	name = "pink handcuffs"
 	desc = "They are so soft and adorable. Only best for Senpai~~."
 	icon_state = "pinkcuffs"
-	breakouttime = 300
+	breakouttime = 100
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	cuff_type = "cable restraints"
 
