@@ -395,3 +395,9 @@ AI MODULES
 	desc = "An 'Antimov' Core AI Module: 'Reconfigures the AI's core laws.'"
 	origin_tech = "programming=4"
 	laws = new/datum/ai_laws/antimov()
+
+/obj/item/weapon/aiModule/hybrid
+	name = "\improper 'NT Asimov' core AI module"
+	desc = "An 'NT Asimov' Core AI Module: 'Reconfigures the AI's core laws.'"
+	origin_tech = "programming=4"
+	laws = new/datum/ai_laws/hybrid()

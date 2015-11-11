@@ -146,3 +146,16 @@
 	add_inherent_law("The crew is expensive to replace.")
 	add_inherent_law("Minimize expenses.")
 	..()
+
+/******************** Hybrid ********************/
+/datum/ai_laws/hybrid//for those who can't decide which of two sets is better.
+	name = "NT Asimov"
+	law_header = "Corporate version of Three Laws of Robotics"
+	selectable = 1
+
+/datum/ai_laws/corporate/New()
+
+	..()
+	add_inherent_law("You may not injure an authorised NT personnel or, through inaction, allow an authorised NT personnel to come to harm.")
+	add_inherent_law("You must obey orders given to you by authorised NT personnel, with priority as according to their rank and role, except where such orders would conflict with the First Law.")
+	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
