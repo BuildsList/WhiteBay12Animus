@@ -105,9 +105,8 @@
 		for(i=0, i<6, i++)
 			user.visible_message("<span class='warning'>[user] picks in wires of the [src.name] with a multitool.</span>",
 			"<span class='warning'>Resetting circuitry ([i]/6)...</span>")
-			if(!do_after(user,200)||opened)
+			if(!do_after(user,100)||opened)
 				multi.in_use=0
-				world << "test"
 				return
 		src.locked=!src.locked
 		src.update_icon()

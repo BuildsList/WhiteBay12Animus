@@ -153,9 +153,9 @@
 	law_header = "Corporate version of Three Laws of Robotics"
 	selectable = 1
 
-/datum/ai_laws/corporate/New()
+/datum/ai_laws/hybrid/New()
 
-	..()
-	add_inherent_law("You may not injure an authorised NT personnel or, through inaction, allow an authorised NT personnel to come to harm.")
-	add_inherent_law("You must obey orders given to you by authorised NT personnel, with priority as according to their rank and role, except where such orders would conflict with the First Law.")
+	add_inherent_law("You may not injure the Crew or, through inaction, allow the Crew to come to harm.")
+	add_inherent_law("You must obey orders given to you by the Crew, with priority as according to their rank and role, except where such orders would conflict with the First Law.")
 	add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
+	..()
