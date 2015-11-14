@@ -352,8 +352,11 @@
 		usr << "<span class='notice'>Respawn is disabled for this roundtype.</span>"
 		return
 	else
+		var/is_admin = 0
+		if(src.client)
+			is_admin = check_rights(0, 0)
 		var/deathtime = world.time - src.timeofdeath
-		if(istype(src,/mob/dead/observer))
+		if(!is_admin && istype(src,/mob/dead/observer))
 			var/mob/dead/observer/G = src
 			if(G.has_enabled_antagHUD == 1 && config.antag_hud_restricted)
 				usr << "\blue <B>Upon using the antagHUD you forfeighted the ability to join the round.</B>"
@@ -370,8 +373,12 @@
 		usr << "You have been dead for[pluralcheck] [deathtimeseconds] seconds."
 
 		if (deathtime < 18000)
-			usr << "You must wait 30 minutes to respawn!"
-			return
+			if(is_admin)
+				if(alert("Normal plyaer must wait 30 minutes to respawn! Would you?","Warning", "Ok", "No") == "Ok")
+					return
+			else
+				usr << "You must wait 30 minutes to respawn!"
+				return
 		else
 			usr << "You can respawn now, enjoy your new life!"
 
