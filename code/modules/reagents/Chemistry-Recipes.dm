@@ -27,6 +27,12 @@
 	result = "inaprovaline"
 	required_reagents = list("oxygen" = 1, "carbon" = 1, "sugar" = 1)
 	result_amount = 3
+/datum/chemical_reaction/cyanide
+	name = "cyanide"
+	id = "cyanide"
+	result = "cyanide"
+	required_reagents = list("hydrogen" = 1, "carbon" = 1, "nitrogen"=1)
+	result_amount = 1
 
 /datum/chemical_reaction/dylovene
 	name = "Dylovene"
